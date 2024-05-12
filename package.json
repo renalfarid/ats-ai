@@ -6,7 +6,13 @@
     "dev": "bun run --watch src/index.ts"
   },
   "dependencies": {
-    "elysia": "latest"
+    "@elysiajs/static": "^1.0.3",
+    "@google/generative-ai": "^0.11.1",
+    "@langchain/community": "^0.0.56",
+    "@types/pdf-parse": "^1.1.4",
+    "dotenv": "^16.4.5",
+    "elysia": "latest",
+    "patch-package": "^8.0.0"
   },
   "devDependencies": {
     "bun-types": "latest"
