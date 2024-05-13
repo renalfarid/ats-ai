@@ -15,7 +15,9 @@ export const readResume = async (pdfFilePath: string, jobDescription: string) =>
         `Act Like a skilled or very experience ATS(Application Tracking System)
         find matching between ${resumeText} and ${jobDescription}
         I want output only in json format like :
-        {"candidate_name":<name candidate>, "match":<percentage match with job description>,"missing_keywords": <missing keyword on resume>,"profile_summary":"<resume summary>", "reason":<your reason>}`
+        {"candidate_name":<name candidate>, "match":<x% match>,
+        "missing_keywords": <missing keyword on resume>,"profile_summary":"<resume summary>", 
+        "reason":<your opinion about candidate with job description>}`
     );
 
     const chunks = [];
